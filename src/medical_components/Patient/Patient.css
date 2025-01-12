@@ -1,0 +1,150 @@
+/* ******** PATIENT CSS start **********/
+#Home {
+  line-height: 1.7;
+}
+#Home h2 {
+  color: #005ea2;
+  transition: ease 0.2s;
+}
+/* ******** PATIENT CSS  end**********/
+/* *********PATIENT 2 CSS start ***********/
+
+#Patient2 {
+  line-height: 1.7;
+}
+.FormElement {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+.radioButtonDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+}
+
+@media (max-width: 63.938em) {
+  .radioButtonDiv {
+	display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+  }
+  
+  .FormElement {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+  }
+}
+
+/* .usa-radio__input:focus + .usa-radio__label::before {
+  outline: none;
+} */
+/* button:not([disabled]):focus,
+input:not([disabled]):focus,
+select:not([disabled]):focus,
+textarea:not([disabled]):focus {
+  outline: none;
+  outline-offset: 0;
+} */
+/* *********PATIENT 2 CSS end **********/
+
+/* ******** PATIENT CSS start **********/
+#Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.7;
+  padding: 1rem;
+  text-align: center; /* Ensures text is centered */
+}
+
+#Home h2 {
+  color: #005ea2;
+  transition: color 0.2s ease;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#Home h2:hover {
+  color: #003a73;
+}
+
+#Home p {
+  font-size: 1.5rem; /* Increased font size for "What is your sex?" */
+  margin-bottom: 1rem;
+}
+
+#Home label {
+  font-size: 1.5rem; /* Increased font size for "What is your age?" */
+  margin-bottom: 1rem;
+}
+
+/* General styling for the container */
+#Patient2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+#Patient2 .width-full {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for questions */
+#Patient2 h3 {
+  font-size: 1.5rem;
+  color: #005ea2;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Styling for radio button containers */
+#Patient2 .radioButtonDiv {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+#Patient2 .usa-radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Styling for the input and label to ensure proper alignment */
+#Patient2 .usa-radio__input {
+  margin-right: 10px;
+}
+
+#Patient2 .usa-radio__label {
+  font-size: 1rem;
+}
+
+/* Ensure responsive layout */
+@media (max-width: 768px) {
+  #Patient2 .radioButtonDiv {
+    max-width: 100%;
+  }
+
+  #Patient2 h3 {
+    font-size: 1.2rem;
+  }
+
+  #Patient2 .usa-radio__label {
+    font-size: 0.9rem;
+  }
+}
+
+/* Other styles remain unchanged */
+/* ******** PATIENT CSS end **********/

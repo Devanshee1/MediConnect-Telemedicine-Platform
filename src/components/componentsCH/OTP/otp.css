@@ -1,0 +1,63 @@
+.bod{
+    margin-top: 2rem;
+    margin-left: 9%;
+    display: flex;
+   
+}
+.high{
+    margin-top: 2rem;
+}
+
+#mai{
+    width: 350px;
+    height: 350px;
+    margin-top: 2rem;
+    margin-left: 2%;
+    border: 1px solid rgb(194, 194, 194);
+}
+p{
+    margin-left: 0rem;
+}
+.heading{
+    padding: .5rem;
+    font-size: medium;
+}
+.mes{
+    color: black;
+    font-size: small;
+    margin-left: 10px;
+}
+.alert{
+    margin-top: 0.5rem;;
+    font-size: large;
+}
+.otp{
+    margin-left: 1rem;
+    margin-top: -1.5rem;
+}
+.input{
+    width: 80%;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid grey;
+}
+.but{
+    margin-left: 1rem;
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid rgb(0, 183, 255);
+    background-color: rgb(0, 183, 255);
+    color: black
+}
+.pin{
+    margin-left: 12px;
+    margin-top: 6px;
+    color: rgb(0, 183, 255) ;
+}
+.pin:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
