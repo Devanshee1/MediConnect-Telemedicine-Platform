@@ -14,7 +14,7 @@ export const SearchDoctor = () => {
         dermatologist: [
             {
                 name: "Dr. Priya Mehta",
-                speciality: "Dermatology",
+                speciality: "dermatologist",
                 experience: 8,
                 location: "delhi",
                 clinic: "Skin Glow Clinic",
@@ -23,111 +23,168 @@ export const SearchDoctor = () => {
             },
             {
                 name: "Dr. Vivek Singh",
-                speciality: "Dermatology",
+                speciality: "dermatologist",
                 experience: 12,
-                location: "Delhi",
+                location: "delhi",
                 clinic: "Flawless Skin Center",
                 consultationFees: 850,
                 profilePic: doctor2
+            },
+            {
+                name: "Dr. Kiran Shah",
+                speciality: "dermatologist",
+                experience: 9,
+                location: "mumbai",
+                clinic: "Clear Skin Clinic",
+                consultationFees: 750,
+                profilePic: doctor2
+            },
+            {
+                name: "Dr. Sneha Roy",
+                speciality: "dermatologist",
+                experience: 6,
+                location: "indore",
+                clinic: "Youthful Skin Clinic",
+                consultationFees: 650,
+                profilePic: doctor1
             }
         ],
-        Gynecologist: [
+        gynecologist: [
             {
                 name: "Dr. Rajesh Gupta",
-                speciality: "Gynecology",
+                speciality: "gynecologist",
                 experience: 15,
-                location: "delhi",
+                location: "indore",
                 clinic: "Heart Care Clinic",
                 consultationFees: 1000,
                 profilePic: doctor2
             },
             {
                 name: "Dr. Anjali Sharma",
-                speciality: "Gynecology",
+                speciality: "gynecologist",
                 experience: 10,
                 location: "delhi",
                 clinic: "Healthy Heart Hospital",
                 consultationFees: 900,
                 profilePic: doctor1
+            },
+            {
+                name: "Dr. Neeta Verma",
+                speciality: "gynecologist",
+                experience: 11,
+                location: "mumbai",
+                clinic: "Women Care Center",
+                consultationFees: 950,
+                profilePic: doctor1
             }
         ],
-        GeneralPhysician: [
+        generalphysician: [
             {
                 name: "Dr. Amit Sharma",
-                speciality: "General Physician",
+                speciality: "generalphysician",
                 experience: 20,
-                location: "delhi",
+                location: "mumbai",
                 clinic: "Brain Wellness Center",
                 consultationFees: 1100,
-                profilePic: "https://via.placeholder.com/150"
+                profilePic: doctor2
             },
             {
                 name: "Dr. Meena Rai",
-                speciality: "General Physician",
+                speciality: "generalphysician",
                 experience: 13,
                 location: "delhi",
                 clinic: "Neuro Care Clinic",
                 consultationFees: 950,
-                profilePic: "https://via.placeholder.com/150"
+                profilePic: doctor1
+            },
+            {
+                name: "Dr. Alok Bansal",
+                speciality: "generalphysician",
+                experience: 16,
+                location: "indore",
+                clinic: "Community Health Clinic",
+                consultationFees: 900,
+                profilePic: doctor2
             }
         ],
-        Homeopath: [
+        homeopath: [
             {
                 name: "Dr. Rahul Verma",
-                speciality: "Homepath",
+                speciality: "homeopath",
                 experience: 18,
-                location: "Delhi",
+                location: "delhi",
                 clinic: "Joint Health Clinic",
                 consultationFees: 850,
-                profilePic: "https://via.placeholder.com/150"
+                profilePic: doctor2
             },
             {
                 name: "Dr. Sunita Kapoor",
-                speciality: "Orthopedics",
+                speciality: "homeopath",
                 experience: 14,
-                location: "Delhi",
+                location: "mumbai",
                 clinic: "Bone & Joint Care",
                 consultationFees: 900,
-                profilePic: "https://via.placeholder.com/150"
+                profilePic: doctor1
+            },
+            {
+                name: "Dr. Vishal Tandon",
+                speciality: "homeopath",
+                experience: 10,
+                location: "indore",
+                clinic: "Natural Remedies Clinic",
+                consultationFees: 800,
+                profilePic: doctor2
             }
         ],
-        Ayurveda: [
+        ayurveda: [
             {
                 name: "Dr. Neha Bhardwaj",
-                speciality: "Pediatrics",
+                speciality: "ayurveda",
                 experience: 10,
-                location: "Chennai",
+                location: "indore",
                 clinic: "Happy Kids Clinic",
                 consultationFees: 600,
-                profilePic: "https://via.placeholder.com/150"
+                profilePic: doctor1
             },
             {
                 name: "Dr. Rohan Kumar",
-                speciality: "Pediatrics",
+                speciality: "ayurveda",
                 experience: 7,
-                location: "Chennai",
+                location: "mumbai",
                 clinic: "Little Hearts Hospital",
                 consultationFees: 650,
-                profilePic: "https://via.placeholder.com/150"
+                profilePic: doctor2
+            },
+            {
+                name: "Dr. Ruchi Jain",
+                speciality: "ayurveda",
+                experience: 12,
+                location: "delhi",
+                clinic: "Holistic Wellness Center",
+                consultationFees: 700,
+                profilePic: doctor1
             }
-        ],
-        
+        ]
     };
+    
     
     const fetchDoctors = () => {
         const speciality = searchParams.get('speciality')?.toLowerCase() || ""; // Ensure lowercase for matching
-        const location = searchParams.get('location')?.toLowerCase();    // Ensure lowercase for matching
+        const location = searchParams.get('location')?.toLowerCase();          // Ensure lowercase for matching
     
         // Get fallback data for the speciality if it exists
         const fallbackData = fallbackDoctors[speciality] || [];
     
         // If location is specified, filter doctors by location
-        const filteredDoctors = location
-            ? fallbackData.filter(doctor => doctor.location.toLowerCase() === location)
-            : fallbackData; // Show all doctors if no location is specified
+        const filteredDoctors = fallbackData.filter(
+            doctor => 
+                (!location || doctor.location.toLowerCase() === location) && 
+                doctor.speciality.toLowerCase() === speciality
+        );
     
         setDoctors(filteredDoctors);
     };
+    
     
 
     useEffect(() => {

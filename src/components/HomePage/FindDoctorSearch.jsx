@@ -3,10 +3,7 @@ import './FindDoctorSearch.css'
 import { useNavigate, Navigate } from 'react-router-dom'
 
 const initLocations = [
-    {
-        place: "Raipur",
-        city: "Raipur"
-    },
+    
     {
         place: "Delhi",
         city: "Delhi"
@@ -23,8 +20,9 @@ const initLocations = [
 ]
 
 const initSpeciality = [
-     'Gynecologist', 'General Physician', 'Dermatologist', , 'Homeopath', 'Ayurveda'
-]
+    'dermatologist', 'gynecologist', 'generalphysician', 'homeopath', 'ayurveda'
+];
+
 
 export const FindDoctorSearch = () => {
 
