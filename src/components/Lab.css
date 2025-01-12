@@ -316,3 +316,9 @@ img {
 .top_tests h6,h5{
     color: black;
 }
+
+.slideshow_lab {
+    margin: 0 auto;
+    max-width: 800px; /* Adjust this to your preferred width */
+  }
+  

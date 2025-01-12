@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import "./Lab.css";
 import React, { useState, useEffect } from 'react';
-
+import "bootstrap/dist/css/bootstrap.min.css";
 export const Lab = () => {
   return (
     <div>
@@ -14,35 +14,30 @@ export const Lab = () => {
             <img
               className="d-block w-100"
               src={require("./Images/praco1.png")}
-              alt=""
+              alt="Slide 1"
             />
-            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
 
           <Carousel.Item key="slide-2">
             <img
               className="d-block w-100"
               src={require("./Images/praco2.png")}
-              alt=""
+              alt="Slide 2"
             />
-            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
 
           <Carousel.Item key="slide-3">
             <img
               className="d-block w-100"
               src={require("./Images/praco3.png")}
-              alt=""
+              alt="Slide 3"
             />
-            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </Container>
       {/* Slide show ended */}
-      {/* The rest of your code remains unchanged */}
-    
 
-               {/*-------slide show ended------*/}
+               
 
                <br />
                <br />

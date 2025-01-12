@@ -28,17 +28,17 @@ export const Navigation = () => {
                         />
                     </Link>
                 </div>
-
+                
                 {/* Middle Section: Navigation Links */}
                 <div className="div-nav-middle">
-                    <div className="div-nav-middle-item">
+                <Link to="/search/doctors" className="div-nav-middle-item">
                         <div>Find Doctors</div>
                         <div>Book an appointment</div>
-                    </div>
+                    </Link>
 
                     <Link to="/medicines" className="div-nav-middle-item">
                         <div>Medicines</div>
-                        <div>Practo Pharmacy</div>
+                        <div>MediConnect Pharmacy</div>
                     </Link>
 
                     <Link to="/doctors" className="div-nav-middle-item">

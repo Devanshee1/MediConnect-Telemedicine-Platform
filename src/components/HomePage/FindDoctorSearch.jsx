@@ -15,26 +15,15 @@ const initLocations = [
         place: "Indore",
         city: "Indore"
     },
+    
     {
-        place: "Sapna Sangeeta",
-        city: "Indore"
-    },
-    {
-        place: "Ab Road",
-        city: "Indore"
-    },
-    {
-        place: "Lig Colony",
-        city: "Indore"
-    },
-    {
-        place: "Sudama Nagar",
-        city: "Indore"
+        place: "Mumbai",
+        city: "Mumbai"
     },
 ]
 
 const initSpeciality = [
-    'Dentist', 'Gynecologist/obstetrician', 'General Physician', 'Dermatologist', 'Ear-nose-throat (ent) Specialist', 'Homeopath', 'Ayurveda'
+     'Gynecologist', 'General Physician', 'Dermatologist', , 'Homeopath', 'Ayurveda'
 ]
 
 export const FindDoctorSearch = () => {

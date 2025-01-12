@@ -1,10 +1,10 @@
 import "./Footer.css";
-
+import logo1 from './Images/logo1.png';
 export const Footer = () => {
     return <footer className="footer-container">
         <div className="footer-items">
             <div>
-                <h3>Practo</h3>
+                <h3>MediConnect</h3>
                 <ul>
                     <li>About</li>
                     <li>Blog</li>
@@ -21,35 +21,33 @@ export const Footer = () => {
                     <li>Search for hospitals</li>
                     <li>Book Diagnostic Tests</li>
                     <li>Book Full Body Checkups</li>
-                    <li>Practo Plus</li>
                     <li>Covid Hospital listing</li>
                     <li>Read health articles</li>
                     <li>Read about medicines</li>
-                    <li>Practo drive</li>
-                    <li>Health app</li>
+                    
                 </ul>
             </div>
             <div>
                 <h3>For doctors</h3>
                 <ul>
-                    <li>Practo Profile</li>
+                    <li>MediConnect Profile</li>
                 </ul>
                 <h3>For clinics</h3>
                 <ul>
-                    <li>Ray by Practo</li>
-                    <li>Practo Reach</li>
+                    <li>Ray by MediConnect</li>
+                    <li>MediConnect Reach</li>
                     <li>Ray Tab</li>
-                    <li>Practo Pro</li>
+                    <li>MediConnect Pro</li>
                 </ul>
             </div>
             <div>
                 <h3>For hospitals</h3>
                 <ul>
-                    <li>Insta by Practo</li>
-                    <li>Qikwell by Practo</li>
-                    <li>Practo Profile</li>
-                    <li>Practo Reach</li>
-                    <li>Practo Drive</li>
+                    <li>Insta by MediConnect</li>
+                    <li>Qikwell by MediConnect</li>
+                    <li>MediConnect Profile</li>
+                    <li>MediConnect Reach</li>
+                    <li>MediConnect Drive</li>
                 </ul>
             </div>
             <div>
@@ -60,7 +58,7 @@ export const Footer = () => {
                     <li>Privacy Policy</li>
                     <li>Terms & Conditions</li>
                     <li>Healthcare Directory</li>
-                    <li>Pracot Health Wiki</li>
+                    <li>MediConnect Health Wiki</li>
                     <li>Corporate Wellness</li>
                 </ul>
             </div>
@@ -76,8 +74,8 @@ export const Footer = () => {
             </div>
         </div>
         <div className="footer-logo">
-            <img src="https://www.practostatic.com/web-assets/images/white_practo_logo.svg" alt="practo-logo" />
-            <h3>Copyright © 2017, Practo. All rights reserved.</h3>
+            <img src={logo1} />
+            <h3>Copyright © 2017, MediConnect. All rights reserved.</h3>
         </div>
 
     </footer>

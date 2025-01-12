@@ -11,7 +11,7 @@ import Slider from 'react-slick';
 import doctorImage from './doctor.png';
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import pharma from '../Images/pharma.png';
 export const HomePage = () => {
     const navigate = useNavigate();
 
@@ -96,7 +96,7 @@ export const HomePage = () => {
 
             <section className="home-facilities">
                 <FacilityCard image={process.env.PUBLIC_URL + '/images/find_doctors.webp'} background="#98CBD6" title="Find Doctors Near You" sub="Confirmed appointments" />
-                <FacilityCard image={process.env.PUBLIC_URL + '/images/home_medicines.webp'} background="#ccd0db" title="Medicines" sub="Essentials at your doorstep" />
+                <FacilityCard image={pharma} background="#ccd0db" title="Medicines" sub="Essentials at your doorstep" />
                 <FacilityCard image={process.env.PUBLIC_URL + '/images/lab_tests.png'} background="#afcfed" title="Lab Tests" sub="Sample pickup at your home" />
             </section>
 

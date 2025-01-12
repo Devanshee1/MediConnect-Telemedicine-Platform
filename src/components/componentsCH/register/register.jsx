@@ -56,7 +56,7 @@ const Register = () => {
                 />
                 <div className="register">
                     <div className="Heading">
-                        <h4>Join Practo</h4>
+                        <h4>Join MediConnect</h4>
                     </div>
                     <br />
                     <p>Full name</p>

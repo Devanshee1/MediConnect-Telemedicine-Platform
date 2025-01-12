@@ -18,7 +18,7 @@ import { Container } from "react-bootstrap";
 // import Carousel from "react-bootstrap/Carousel";
 import "./Medicines.css";
 import { Slideshow } from "./SlideShow";
-
+import delivery from './Images/delivery.png';
 
 
 export const Medicines = () => {
@@ -36,13 +36,34 @@ export const Medicines = () => {
   
     return (
         <div>
-            <br />
-            <br />
-            <div>
-                <Slideshow />
-            </div>
-            <br />
-            <br />
+  <br />
+  <br />
+  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between',backgroundColor:'#2aa29e',height:'300px'}}>
+    {/* Text Section */}
+    <div style={{ flex: 1, padding: '0 20px',marginTop:'-20px' }}>
+      <h2 style={{fontSize:'50px'}}>Welcome to MediConnect</h2>
+      <p  style={{fontSize:'25px',color:'#a5cdd9',marginTop:'20px'}}>
+      Your Trusted Online Pharmacy 
+      </p>
+      <p  style={{fontSize:'25px',color:'#a5cdd9',marginTop:'20px'}}>
+      Quality Medicines Delivered to Your Doorstep
+      </p>
+      <p  style={{fontSize:'25px',color:'#a5cdd9',marginTop:'20px'}}>
+      Affordable Prices with Exclusive Discounts
+      </p>
+    </div>
+    
+    {/* Image Section */}
+    <div style={{ flex: 1, textAlign: 'center',marginLeft:'300px' }}>
+      <img 
+        src={delivery}
+        alt="Placeholder" 
+        style={{ maxWidth: '100%', height: '200px', borderRadius: '8px' }} 
+      />
+    </div>
+  </div>
+  <br />
+  <br />
             <Container>
                 <div className="health_div">
                     <h4>SYMPTOM CHECKER</h4>
