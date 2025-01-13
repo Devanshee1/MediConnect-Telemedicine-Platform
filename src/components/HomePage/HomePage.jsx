@@ -11,7 +11,7 @@ import Slider from 'react-slick';
 import doctorImage from './doctor.png';
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import pharma from '../Images/pharma.png';
+import pharma from '../Images/pharma1.png';
 export const HomePage = () => {
     const navigate = useNavigate();
 
@@ -69,14 +69,14 @@ export const HomePage = () => {
 
             <div className="home-search-area">
                 <FindDoctorSearch />
-                <div className="home-try-plus-img-container">
+                {/* <div className="home-try-plus-img-container">
                     <img src="https://www.practostatic.com/subscriptions/images/plus-tag.png" alt="try plus" />
-                </div>
+                </div> */}
             </div>
 
             <section className="home-banner">
-                <div className="home-banner-left">
-                    <h1 style={{ color: "yellow", fontSize: "40px", marginBottom: '-15px', padding: '0px' }}>Tip of the Day</h1>
+                <div className="home-banner-left"  style={{marginTop:'10px'}}>
+                    <h1 style={{ color: "yellow", fontSize: "40px", marginBottom: '-10px', padding: '0px' }}>You Might Not Know</h1>
                     <Slider {...sliderSettings}>
                         {healthcareTips.map((tip, index) => (
                             <div key={index} className="health-tip-slide">
@@ -95,12 +95,39 @@ export const HomePage = () => {
             </section>
 
             <section className="home-facilities">
+                <a href="/homepage">
+                    <FacilityCard 
+                        image={process.env.PUBLIC_URL + '/images/find_doctors.webp'} 
+                        background="#98CBD6" 
+                        title="Find Doctors Near You" 
+                        sub="Confirmed appointments" 
+                    />
+                </a>
+                <a href="/medicines">
+                    <FacilityCard 
+                        image={pharma} 
+                        background="#f3e6d6" 
+                        title="Medicines" 
+                        sub="Essentials at your doorstep" 
+                    />
+                </a>
+                <a href="/doctors">
+                    <FacilityCard 
+                        image={process.env.PUBLIC_URL + '/images/lab_tests.png'} 
+                        background="#afcfed" 
+                        title="Lab Tests" 
+                        sub="Sample pickup at your home" 
+                    />
+                </a>
+            </section>
+
+            {/* <section className="home-facilities">
                 <FacilityCard image={process.env.PUBLIC_URL + '/images/find_doctors.webp'} background="#98CBD6" title="Find Doctors Near You" sub="Confirmed appointments" />
                 <FacilityCard image={pharma} background="#ccd0db" title="Medicines" sub="Essentials at your doorstep" />
                 <FacilityCard image={process.env.PUBLIC_URL + '/images/lab_tests.png'} background="#afcfed" title="Lab Tests" sub="Sample pickup at your home" />
-            </section>
+            </section> */}
 
-            <section className="home-consult">
+            {/* <section className="home-consult">
                 <h2>Consult top doctors online for any health concern</h2>
                 <p>Private online consultations with verified doctors in all specialties</p>
                 <div className="home-consult-card-container">
@@ -111,12 +138,12 @@ export const HomePage = () => {
                     <ConsultCard title="Child not feeling well" image={process.env.PUBLIC_URL + '/images/home_pediatric.svg'} />
                     <ConsultCard title="Depression or anxiety" image={process.env.PUBLIC_URL + '/images/home-mental-wellness.webp'} />
                 </div>
-            </section>
+            </section> */}
 
             <section className="home-appointments">
                 <h2>Book an appointment for an in-clinic consultation</h2>
                 <h3>Find experienced doctors across all specialties</h3>
-                <AppoinmentSlider />
+                {/* <AppoinmentSlider /> */}
             </section>
 
             <section className="home-top-articles">
@@ -129,11 +156,11 @@ export const HomePage = () => {
                 <ArticleCard image="https://www.practostatic.com/fit/bade52edc7fb158bf627216bf96c2b881a97f30c" category="Vitamins and supplements" title="Eating Right to Build Immunity Against Cold and Viral Infections" sub="Dr. Diana Borgio" />
             </section>
 
-            <section className="home-user-reviews">
+            {/* <section className="home-user-reviews">
                 <UserReviewCarousel />
-            </section>
+            </section> */}
 
-            <section className="home-practo-app">
+            {/* <section className="home-practo-app">
                 <div className="home-practo-app-background"></div>
                 <div className="home-practo-app-content">
                     <div className="home-practo-app-image-container">
@@ -160,7 +187,7 @@ export const HomePage = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     );
 };

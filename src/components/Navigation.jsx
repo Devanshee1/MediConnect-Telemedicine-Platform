@@ -31,7 +31,7 @@ export const Navigation = () => {
                 
                 {/* Middle Section: Navigation Links */}
                 <div className="div-nav-middle">
-                <Link to="/search/doctors" className="div-nav-middle-item">
+                <Link to="/homepage" className="div-nav-middle-item">
                         <div>Find Doctors</div>
                         <div>Book an appointment</div>
                     </Link>
