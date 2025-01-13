@@ -58,7 +58,7 @@ export const Lab = () => {
                           <div>
                          <img src = "https://www.practo.com/tests/public/icons/call-to-order.svg" alt="" />
                          </div>
-                           <h4>+91 8303446036</h4> 
+                           <h4 style={{color:"black"}}>+91 8303446036</h4> 
                       </div>
                  </div> 
                </Container>
@@ -275,7 +275,7 @@ export const Lab = () => {
                <br />
                <Container>
                <div>
-                   <h2>How it works?</h2>
+                   <h2 style={{color:"black"}}>How it works?</h2>
                    <br />
                    
                    <div className="written_flex">

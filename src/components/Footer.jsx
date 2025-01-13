@@ -27,7 +27,7 @@ export const Footer = () => {
                     
                 </ul>
             </div>
-            <div>
+            {/* <div>
                 <h3>For doctors</h3>
                 <ul>
                     <li>MediConnect Profile</li>
@@ -39,8 +39,8 @@ export const Footer = () => {
                     <li>Ray Tab</li>
                     <li>MediConnect Pro</li>
                 </ul>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
                 <h3>For hospitals</h3>
                 <ul>
                     <li>Insta by MediConnect</li>
@@ -49,7 +49,7 @@ export const Footer = () => {
                     <li>MediConnect Reach</li>
                     <li>MediConnect Drive</li>
                 </ul>
-            </div>
+            </div> */}
             <div>
                 <h3>More</h3>
                 <ul>

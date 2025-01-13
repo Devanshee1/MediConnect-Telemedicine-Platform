@@ -92,6 +92,9 @@ body {
     color: rgb(92, 78, 78);
 }
 
+.test_div h5{
+    color: black;
+}
 .test_div>p:nth-child(3) {
     font-size: 14px;
     color: rgb(92, 91, 91);
